@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Bistrot Parisien - Cuisine Française Authentique</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Le Bistrot Parisien</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Accueil</a></li>
+                <li><a href="menu.html">Notre Carte</a></li>
+                <li><a href="commande.html">Commander</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html">Contact & Réservation</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Le Bistrot Parisien</h1>
+            <p>Une expérience gastronomique authentique au cœur de la tradition française</p>
+            <button class="cta-button" onclick="location.href='contact.html'">Réserver une table</button>
+        </div>
+    </section>
+
+    <!-- Section Spécialités -->
+    <section class="specialties">
+        <div class="container">
+            <h2>Nos Créations Signature</h2>
+            <div class="dishes-grid">
+                <div class="dish-card">
+                    <img src="assets/images/plat-signature-1.jpg" alt="Bœuf Bourguignon">
+                    <h3>Bœuf Bourguignon Maison</h3>
+                    <p>Bœuf mijoté au vin rouge de Bourgogne, lardons, champignons et petits oignons</p>
+                    <span class="price">28€</span>
+                </div>
+                <div class="dish-card">
+                    <img src="assets/images/plat-signature-2.jpg" alt="Confit de Canard">
+                    <h3>Confit de Canard</h3>
+                    <p>Cuisse de canard confite, pommes de terre sautées à l'ail et romarin</p>
+                    <span class="price">26€</span>
+                </div>
+                <div class="dish-card">
+                    <img src="assets/images/plat-signature-3.jpg" alt="Soufflé au Chocolat">
+                    <h3>Soufflé au Chocolat Grand Marnier</h3>
+                    <p>Soufflé léger au chocolat noir et zestes d'orange, servi tiède</p>
+                    <span class="price">14€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Horaires -->
+    <section class="hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-text">
+                    <h2>Horaires d'Ouverture</h2>
+                    <div class="schedule">
+                        <div class="day">
+                            <span>Lundi - Vendredi</span>
+                            <span>12:00 - 14:30 • 19:00 - 22:30</span>
+                        </div>
+                        <div class="day">
+                            <span>Samedi</span>
+                            <span>12:00 - 15:00 • 19:00 - 23:00</span>
+                        </div>
+                        <div class="day">
+                            <span>Dimanche</span>
+                            <span>12:00 - 15:00</span>
+                        </div>
+                    </div>
+                    <button class="secondary-button" onclick="location.href='menu.html'">Voir Notre Carte Complète</button>
+                </div>
+                <div class="hours-image">
+                    <img src="assets/images/interior-1.jpg" alt="Intérieur du restaurant">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Le Bistrot Parisien</h3>
+                    <p>Cuisine française authentique dans une ambiance chaleureuse et élégante.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 12 Rue du Gourmet, 75008 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 45 67 89 10</p>
+                    <p><i class="fas fa-envelope"></i> contact@lebistrotparisien.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Le Bistrot Parisien. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
