@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Réservation - Le Bistrot Parisien</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Le Bistrot Parisien</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="menu.html">Notre Carte</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="contact.html" class="active">Contact & Réservation</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <div class="container">
+            <h1>Réservez Votre Table</h1>
+            <p>Vivez une expérience gastronomique inoubliable</p>
+        </div>
+    </section>
+
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2>Formulaire de Réservation</h2>
+                    <form id="reservationForm">
+                        <div class="form-group">
+                            <label for="name">Nom complet *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Date *</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Heure *</label>
+                                <input type="time" id="time" name="time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="guests">Nombre de personnes *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Sélectionnez</option>
+                                    <option value="1">1 personne</option>
+                                    <option value="2">2 personnes</option>
+                                    <option value="3">3 personnes</option>
+                                    <option value="4">4 personnes</option>
+                                    <option value="5">5 personnes</option>
+                                    <option value="6">6 personnes</option>
+                                    <option value="7">7 personnes</option>
+                                    <option value="8">8 personnes ou plus</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="occasion">Occasion spéciale</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Aucune occasion spéciale</option>
+                                    <option value="anniversaire">Anniversaire</option>
+                                    <option value="mariage">Mariage</option>
+                                    <option value="entreprise">Dîner d'affaires</option>
+                                    <option value="famille">Réunion de famille</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Demandes particulières</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Allergies, préférences alimentaires..."></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Réserver Maintenant</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h2>Nos Coordonnées</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>12 Rue du Gourmet<br>75008 Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+33 1 45 67 89 10</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@lebistrotparisien.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun-Ven: 12h-14h30 • 19h-22h30<br>
+                               Sam: 12h-15h • 19h-23h<br>
+                               Dim: 12h-15h</p>
+                        </div>
+                    </div>
+
+                    <div class="map">
+                        <h3>Nous Trouver</h3>
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <p>Carte interactive</p>
+                            <small>12 Rue du Gourmet, 75008 Paris</small>
+                        </div>
+                    </div>
+
+                    <div class="emergency-contact">
+                        <h3>Réservation Urgente ?</h3>
+                        <p>Appelez-nous directement au</p>
+                        <a href="tel:+33145678910" class="phone-link">+33 1 45 67 89 10</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Le Bistrot Parisien</h3>
+                    <p>Cuisine française authentique dans une ambiance chaleureuse et élégante.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 12 Rue du Gourmet, 75008 Paris</p>
+                    <p><i class="fas fa-phone"></i> +33 1 45 67 89 10</p>
+                    <p><i class="fas fa-envelope"></i> contact@lebistrotparisien.fr</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Le Bistrot Parisien. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
